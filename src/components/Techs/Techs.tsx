@@ -12,6 +12,12 @@ function Techs() {
 
     const techs: Tech[] = [
         {
+            name: "Node",
+            image: "./node.png",
+            background: "bg-green-500",
+            caption: "Node"
+        },
+        {
             name: "C#",
             image: "./csharp.png",
             background: "bg-purple-300",
@@ -28,6 +34,18 @@ function Techs() {
             image: "./typescript.png",
             background: "bg-blue-400",
             caption: "Typescript"
+        },
+        {
+            name: "Socket IO",
+            image: "./socketio.png",
+            background: "bg-white",
+            caption: "Socket IO",
+        },
+        {
+            name: "GraphQL",
+            image: "./graphql.png",
+            background: "bg-purple-500",
+            caption: "GraphQL"
         },
         {
             name: "Flutter",
@@ -108,7 +126,7 @@ function Techs() {
                 showTooltip={true}
                 displayOverlayContent={true}
                 overlayContent={
-                    <p className={"tilted-card-title " + t.background}>
+                    <p className={"tilted-card-title " + t.background }>
                         {t.name}
                     </p>
                 }
