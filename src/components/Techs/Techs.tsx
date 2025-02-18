@@ -4,8 +4,8 @@ import "./Techs.css";
 interface Tech {
     name: string;
     image: string;
-
     background: string;
+    caption: string;
 }
 
 function Techs() {
@@ -14,52 +14,80 @@ function Techs() {
         {
             name: "C#",
             image: "./csharp.png",
-            background: "bg-purple-300"
+            background: "bg-purple-300",
+            caption: "C#"
         },
         {
             name: "Python",
             image: "./python.png",
-            background: "bg-yellow-200"
+            background: "bg-yellow-200",
+            caption: "Python"
         },
         {
             name: "Typescript",
             image: "./typescript.png",
-            background: "bg-blue-400"
+            background: "bg-blue-400",
+            caption: "Typescript"
         },
         {
             name: "Flutter",
             image: "./flutter.png",
-            background: "bg-blue-300"
+            background: "bg-blue-300",
+            caption: "Flutter"
         },
         {
             name: "Postgres",
             image: "./postgres.png",
-            background: "bg-blue-500"
+            background: "bg-blue-500",
+            caption: "Postgres"
         },
         {
             name: "MongoDB",
             image: "./mongo.png",
-            background: "bg-green-500"
+            background: "bg-green-500",
+            caption: "MongoDB"
         },
         {
             name: "NestJS",
             image: "./nest.png",
-            background: "bg-red-300"
+            background: "bg-red-300",
+            caption: "NestJS"
         },
         {
             name: "Docker",
             image: "./docker.png",
-            background: "bg-blue-900"
+            background: "bg-blue-900",
+            caption: "Docker"
         },
         {
             name: "Jenkins",
             image: "./jenkins.png",
-            background: "bg-red-500"
+            background: "bg-red-500",
+            caption: "Jenkins"
         },
         {
             name: "Git",
             image: "./git.png",
-            background: "bg-orange-700"
+            background: "bg-orange-700",
+            caption: "Git"
+        },
+        {
+            name: "Angular",
+            image: "./angular.png",
+            background: "bg-purple-700",
+            caption: "Angular"
+        },
+        {
+            name: "Qwik",
+            image: "./qwik.png",
+            background: "bg-blue-700",
+            caption: "QwikJs"
+        },
+        {
+            name: "React",
+            image: "./react.png",
+            background: "bg-blue-600",
+            caption: "React"
         }
     ];
 
@@ -68,8 +96,8 @@ function Techs() {
         {
             techs.map(t => <TiltedCard key={t.name}
                 imageSrc={t.image}
-                altText="Kendrick Lamar - GNX Album Cover"
-                captionText="Angular"
+                altText={t.caption}
+                captionText={t.caption}
                 containerHeight="150px"
                 containerWidth="150px"
                 imageHeight="150px"

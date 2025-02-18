@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.picture {
+    @apply border border-2 border-cyan-400;
+    border-radius: 65% 35% 70% 30% / 35% 69% 31% 65%;
+}
