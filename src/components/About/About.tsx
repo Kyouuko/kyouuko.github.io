@@ -27,7 +27,7 @@ const experience: CarouselItem[] = [
 
 function About() {
 
-    const about: string = "¡Hola!, soy Gian, un desarrollador de aplicaciones móviles y fullstack, soy de 🇨🇴, pero vivo en 🇧🇴 actualmente. Tengo 28 años y comencé a programar desde los 14 como un hobby y actualmente es mi trabajo 😃. Soy una persona autodidacta, me gusta estar al tanto de las novedades en el mundo de la programación y la tecnología. Abajo encontrarás las herramientas y lenguajes que uso actualmente (siempre va en aumento 😉, ahora mismo estoy aprendiendo Qwik y React)";
+    const about: string = "¡Hola!, soy Gian, un desarrollador de aplicaciones móviles y fullstack, soy de 🇨🇴, pero vivo en 🇧🇴 actualmente. Tengo 28 años y comencé a programar desde los 14 como un hobby y actualmente es mi trabajo 😃. Soy una persona autodidacta, me gusta estar al tanto de las novedades en el mundo de la programación y la tecnología. Abajo encontrarás las herramientas, tecnologias y lenguajes que uso actualmente (siempre va en aumento 😉, ahora mismo estoy aprendiendo Qwik y React)";
 
     return <section className="px-12 pt-3 pb-10  grid md:grid-cols-2">
         <div className="sm:px-5">

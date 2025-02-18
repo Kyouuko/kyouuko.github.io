@@ -18,6 +18,12 @@ function Techs() {
             caption: "Node"
         },
         {
+            name: "Deno",
+            image: "./deno.png",
+            background: "bg-white",
+            caption: "Deno"
+        },
+        {
             name: "C#",
             image: "./csharp.png",
             background: "bg-purple-300",
@@ -84,6 +90,12 @@ function Techs() {
             caption: "Jenkins"
         },
         {
+            name: "NATS",
+            image: "./nats.png",
+            background: "bg-green-700",
+            caption: "NATS"
+        },
+        {
             name: "Git",
             image: "./git.png",
             background: "bg-orange-700",
@@ -120,8 +132,8 @@ function Techs() {
                 containerWidth="150px"
                 imageHeight="150px"
                 imageWidth="150px"
-                rotateAmplitude={16}
-                scaleOnHover={1}
+                rotateAmplitude={20}
+                scaleOnHover={1.1}
                 showMobileWarning={false}
                 showTooltip={true}
                 displayOverlayContent={true}
