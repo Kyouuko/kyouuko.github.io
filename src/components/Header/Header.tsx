@@ -1,14 +1,20 @@
+import { motion, useScroll, useTransform } from "framer-motion";
 import Aurora from "../../bits/Aurora";
 import RotatingText from "../../bits/RotatingText";
 import "./Header.css"
 function Header() {
+    const { scrollYProgress } = useScroll();
+    const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
     return (
         <header className="h-screen relative">
             <Aurora
                 colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
                 speed={0.5} />
-            <section className="absolute top-0 w-full h-full flex justify-center flex-col items-center gap-6">
-                <img src="me.jpg" alt="" className="picture h-[300px]" />
+            <motion.section style={{ opacity }} className="absolute top-0 w-full h-full flex justify-center flex-col items-center gap-6">
+                {/* 65% 35% 70% 30% / 35% 69% 31% 65% */}
+                <motion.img
+                    style={{ borderRadius: "65% 35% 70% 30% / 35% 69% 31% 65%", borderColor: "cyan", borderWidth: "3px", aspectRatio: "1 / 1", objectFit: "cover" }}
+                    whileHover={{ scale: 1.05, borderRadius: "35% 69% 31% 65% / 65% 35% 70% 30%", cursor: "pointer"}} src="me.jpg" alt="" className="h-[300px]" />
                 <div className="flex items-center">
                     <RotatingText
                         texts={["Frontend", "Backend", "Mobile"]}
@@ -26,7 +32,7 @@ function Header() {
                         developer!
                     </span>
                 </div>
-            </section>
+            </motion.section>
         </header>
     );
 }
