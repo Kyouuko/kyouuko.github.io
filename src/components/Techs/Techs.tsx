@@ -138,7 +138,7 @@ function Techs() {
                 showTooltip={true}
                 displayOverlayContent={true}
                 overlayContent={
-                    <p className={"tilted-card-title " + t.background }>
+                    <p className={"tilted-card-title " + t.background}>
                         {t.name}
                     </p>
                 }
