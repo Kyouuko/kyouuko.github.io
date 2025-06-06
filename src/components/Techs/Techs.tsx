@@ -30,6 +30,12 @@ function Techs() {
             caption: "C#"
         },
         {
+            name: ".NET",
+            image: "./dotnet.png",
+            background: "bg-purple-400",
+            caption: ".NET"
+        },
+        {
             name: "Python",
             image: "./python.png",
             background: "bg-yellow-200",
@@ -102,6 +108,18 @@ function Techs() {
             caption: "Git"
         },
         {
+            name: "Jira",
+            image: "./jira.png",
+            background: "bg-blue-800",
+            caption: "Jira"
+        },
+        {
+            name: "Bitbucket",
+            image: "./bitbucket.png",
+            background: "bg-blue-600",
+            caption: "Bitbucket"
+        },
+        {
             name: "Angular",
             image: "./angular.png",
             background: "bg-purple-700",
@@ -118,7 +136,7 @@ function Techs() {
             image: "./react.png",
             background: "bg-blue-600",
             caption: "React"
-        }
+        },
     ];
 
 
