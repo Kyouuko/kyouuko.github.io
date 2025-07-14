@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const socialLinks = {
     instagram: "https://www.instagram.com/gcmarino",
     facebook: "https://www.facebook.com/gcmarino21",
-    github: "https://github.com/Kyouuko",
+    github: "https://github.com/gcmarino",
 };
 
 
