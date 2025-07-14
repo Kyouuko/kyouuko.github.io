@@ -90,6 +90,12 @@ function Techs() {
             caption: "Docker"
         },
         {
+            name: "Azure",
+            image: "./azure.png",
+            background: "bg-blue-500",
+            caption: "Azure"
+        },
+        {
             name: "Jenkins",
             image: "./jenkins.png",
             background: "bg-red-500",
@@ -100,6 +106,12 @@ function Techs() {
             image: "./nats.png",
             background: "bg-green-700",
             caption: "NATS"
+        },
+        {
+            name: "RabbitMQ",
+            image: "./rabbit.png",
+            background: "bg-orange-600",
+            caption: "RabbitMQ"
         },
         {
             name: "Git",
@@ -146,20 +158,15 @@ function Techs() {
                 imageSrc={t.image}
                 altText={t.caption}
                 captionText={t.caption}
-                containerHeight="150px"
-                containerWidth="150px"
-                imageHeight="150px"
-                imageWidth="150px"
+                containerHeight="50px"
+                containerWidth="50px"
+                imageHeight="50px"
+                imageWidth="50px"
                 rotateAmplitude={20}
                 scaleOnHover={1.1}
                 showMobileWarning={false}
                 showTooltip={true}
                 displayOverlayContent={true}
-                overlayContent={
-                    <p className={"tilted-card-title " + t.background}>
-                        {t.name}
-                    </p>
-                }
             />)
         }
 
